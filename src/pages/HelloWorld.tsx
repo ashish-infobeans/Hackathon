@@ -1,8 +1,7 @@
 export function HelloWorld() {
   return (
     <main>
-      <h1>Hello World</h1>
-      <p>AI Coding Hackathon — Project Discovery App</p>
+      <h1>This is my first project in react created using AI </h1>
     </main>
   )
 }
