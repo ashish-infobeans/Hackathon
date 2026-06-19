@@ -46,10 +46,10 @@ For every item:
 
 5. App shell and routing (mocked)
 
-- [ ] Add app layout (header, content container)
-      [ ] Add routes: `/` (Project List), `/project/:id` (Details), `/propose` (Propose)
-      [ ] Add theme/tokens and basic global styles
-      [ ] Add error boundary and 404 route
+- [x] Add app layout (header, content container)
+      [x] Add routes: `/` (Project List), `/project/:id` (Details), `/propose` (Propose)
+      [x] Add theme/tokens and basic global styles
+      [x] Add error boundary and 404 route
 
 6. Testing foundations
 
@@ -62,28 +62,29 @@ For every item:
 
 7. Identity (localStorage)
 
-- [ ] Implement name prompt modal (first visit)
-      [ ] Store `display_name` and generated `client_id` (UUID) in localStorage
-      [ ] Show current display name in header
+- [x] Implement name prompt modal (first visit)
+      [x] Store `display_name` and generated `client_id` (UUID) in localStorage
+      [x] Show current display name in header
 
 8. Project cards (mocked)
 
-- [ ] Create `ProjectCard` component (title, shortDescription, signupCount, participant chips)
-      [ ] Add `isSignedUp` visual state (highlight + badge)
-      [ ] Mock ~6–9 projects for dev (JSON or in-memory)
-      [ ] Infinite scroll: append next mocked page on bottom reach
+- [x] Create `ProjectCard` component (title, shortDescription, signupCount, participant chips)
+      [x] Add `isSignedUp` visual state (highlight + badge)
+      [x] Mock ~6–9 projects for dev (JSON or
+       in-memory)
+      [x] Infinite scroll: append next mocked page on bottom reach
 
 9. Details view (mocked)
 
-- [ ] Build details page (title, short description, full participant list)
-      [ ] Contextual CTA: Join / Switch / Give up (mocked state)
-      [ ] Empty states and loading placeholders
+- [x] Build details page (title, short description, full participant list)
+      [x] Contextual CTA: Join / Switch / Give up (mocked state)
+      [x] Empty states and loading placeholders
 
 10. Propose project (mocked)
 
-- [ ] Propose form with validation (title, shortDescription)
-      [ ] Submit adds to local mocked list with `pending` status
-      [ ] Do not show pending proposals in main list
+- [x] Propose form with validation (title, shortDescription)
+      [x] Submit adds to local mocked list with `pending` status
+      [x] Do not show pending proposals in main list
 
 11. Component and unit tests expansion (mocked)
 
@@ -138,20 +139,20 @@ For every item:
 
 18. Participant bootstrap (lazy)
 
-- [ ] On first join/propose, upsert participant by `client_id`
-      [ ] Store returned `participant_id` in memory
+- [x] On first join/propose, upsert participant by `client_id`
+      [x] Store returned `participant_id` in memory
 
 19. Join / Switch / Give up (backend)
 
-- [ ] Implement join: insert into `signups` for current participant
-      [ ] Implement give up: delete from `signups` by participant
-      [ ] Create RPC `switch_signup(new_project_id, participant_id)` (transactional)
-      [ ] Wire UI CTAs to mutations; optimistic update then refetch
+- [x] Implement join: insert into `signups` for current participant
+      [x] Implement give up: delete from `signups` by participant
+      [x] Switch via delete + insert (no RPC)
+      [x] Wire UI CTAs to mutations; refetch after mutation
 
 20. Propose project (backend)
 
-- [ ] Insert `projects` with `status='pending'`
-      [ ] List shows only `approved`
+- [x] Insert `projects` with `status='pending'`
+      [x] List shows only `approved`
       [ ] Document how to approve in Supabase dashboard
 
 21. Integration tests

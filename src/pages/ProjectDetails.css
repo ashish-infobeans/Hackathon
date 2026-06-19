@@ -1,0 +1,78 @@
+.skeleton {
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+  background: linear-gradient(
+    90deg,
+    var(--color-border) 0%,
+    #f1f5f9 50%,
+    var(--color-border) 100%
+  );
+  background-size: 200% 100%;
+  border-radius: var(--radius-md);
+}
+
+.skeleton--title {
+  height: 2rem;
+  width: min(24rem, 80%);
+}
+
+.skeleton--line {
+  height: 1rem;
+  width: 100%;
+}
+
+.skeleton--line-sm {
+  height: 0.875rem;
+  width: 8rem;
+}
+
+.skeleton--line-short {
+  width: 65%;
+}
+
+.skeleton--chip {
+  border-radius: 999px;
+  height: 1.75rem;
+  list-style: none;
+  width: 5rem;
+}
+
+.skeleton--chip-wide {
+  width: 6.5rem;
+}
+
+.skeleton--button {
+  height: 2.75rem;
+  width: 10rem;
+}
+
+.details-panel__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.details-panel__error {
+  color: var(--color-danger);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.button--danger {
+  background: transparent;
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+}
+
+.button--danger:hover:not(:disabled) {
+  background: var(--color-danger-soft);
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}

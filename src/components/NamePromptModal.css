@@ -1,0 +1,79 @@
+.name-prompt__backdrop {
+  align-items: center;
+  background: rgb(15 23 42 / 0.45);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: var(--space-5);
+  position: fixed;
+  z-index: 100;
+}
+
+.name-prompt__dialog {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 28rem;
+  padding: var(--space-6);
+  width: 100%;
+}
+
+.name-prompt__dialog h2 {
+  font-size: 1.5rem;
+}
+
+.name-prompt__dialog p {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.name-prompt__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.name-prompt__field {
+  font-weight: 600;
+}
+
+.name-prompt__form input {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.name-prompt__form input:focus-visible {
+  border-color: var(--color-primary);
+  outline: 2px solid var(--color-primary-soft);
+}
+
+.name-prompt__error {
+  color: var(--color-danger);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.name-prompt__submit {
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+}
+
+.name-prompt__submit:hover {
+  background: var(--color-primary-hover);
+}
+
+.name-prompt__submit:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
