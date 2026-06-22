@@ -85,7 +85,7 @@ export function ProposeProject() {
   return (
     <section className="page">
       <header className="page__header">
-        <h1>Propose a Project</h1>
+        <h1>Propose a New Project</h1>
         <p>Share a new idea for others to join. Submissions will be reviewed before publishing.</p>
       </header>
 
